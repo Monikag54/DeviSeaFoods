@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities</title>
+    <link href="/images/favicon.png" rel="icon" />
+    <link rel="stylesheet" href="Facilities.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9957070601.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <nav>  
+        <div class="nav-bar"  id="nav-bar" >
+          <div class="logo">
+            <a href="#" style="background: none;">
+                <img id="logo-img" height="37" width="120" class="logo-img auto_size" src="/images/mainLogo.png" alt="logo-img">
+            </a>
+          </div>
+          <input type="radio" name="slider" id="menu-btn">      
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+                <li>
+                    <a href="Home.html" class="navtabs"> 
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="About.html" class="navtabs">
+                        About
+                    </a>
+                </li>
+                <li >
+                    <a href="Overview.html" class="desktop-item navtabs">
+                        Overview
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">
+                        Overview
+                    </label>
+                    <ul class="drop-menu">
+                        <li>
+                            <a href="Overview.html#OverviewFD" class="navtabs">
+                                Feed Division
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Overview.html#OverviewGS" class="navtabs">
+                                Global Sourcing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Overview.html#OverviewPF" class="navtabs">
+                                Product Forms
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="ShrimpProducts.html" class="desktop-item navtabs">
+                        What We Do
+                    </a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">
+                        What We Do
+                    </label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="images/megaMenuImageNavbar.jfif" alt="">
+                            </div>
+                            <div class="row">
+                                <header>
+                                    Shrimp Processing
+                                </header>
+                                <ol class="mega-links">
+                                    <li>
+                                        <a href="Facilities.html"  class="navtabs">
+                                            Facilities
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Facilities.html#FacilitiesSS"  class="navtabs">
+                                            Support Systems
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ShrimpProducts.html"  class="navtabs">
+                                            Products
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ShrimpProducts.html#ProductsSP"  class="navtabs">
+                                            Shrimp Products
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="row">
+                                <header>
+                                    Shrimp Feed
+                                </header>
+                                <ol class="mega-links">
+                                    <li class="mega-links-li" >
+                                        <a href="FeedMill.html" class="navtabs">
+                                            Feed Mill
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="FeedMill.html#ShrimpFeedBR" class="navtabs">
+                                            Building Relationship
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ShrimpFeed.html"  class="navtabs">
+                                            Shrimp Feed
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ShrimpFeed.html#FeedSHP"  class="navtabs">
+                                            Shrimp Healthcare Products
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="row">
+                                <header>
+                                    Supply Solutions
+                                </header>
+                                <ol class="mega-links">
+                                    <li>
+                                        <a href="SupplyServices.html"  class="navtabs">
+                                            Service Network
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="SupplyServices.html#SupplyServicesSLS" class="navtabs">
+                                            Support linked to Source
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="SupplyServices.html#SupplyServicesSLS"  class="navtabs">
+                                            Sustainability
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="SupplyServices.html#SupplyServicesSS"  class="navtabs">
+                                            Shrimp Selections
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="Contact.html" class="navtabs">
+                        Contact Us
+                    </a>
+                </li>
+
+            <li>
+                <a href="javascript:void(0);" id="compliance-link">
+                    Compliance
+                </a>
+            </li>
+            
+            <!-- Right-Side Modal -->
+            <div id="compliance-modal" class="right-modal">
+                <div class="modal-content">
+                    <span class="close-btn" id="close-modal">&times;</span>
+        
+                            <h1 class="heading-compilance">
+                                Our Compliances
+                              </h1>
+                        </div>
+                        <div class="div-block">
+                          <h4 class="heading">
+                              CFO - Devi Sea Foods, Tanuku
+                          </h4>
+                          <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fc4e3be1c29739ce3fba48c_CFO-Devi-Seafoods-Tanuku.pdf" target="_blank" class="products-button w-button">
+                              Download
+                          </a>
+                      </div>
+                      <div class="div-block">
+                        <h4 class="heading">
+                            Environmental Report 2019-20 - Devi sea Foods, Tanuku
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fc4e53befab265c4ed83dd8_Environmental-Report-2019-20-Devi-Seafoods-Tanuku.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                            CFE Expansion - Feed Division, Devi Sea Foods, Singarayakonda
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fc4e2d8bd65e89d7088856f_CFE-Expansion-Feed-Division-Devi-Seafoods-Singarayakonda.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                            CFO - Devi Sea Foods, Singarayakonda
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fc4e3be4bcd579b3ceaa9b2_CFO-Devi-Seafoods-SIngarayakonda.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                            CFO - Feed Division - Devi Sea Foods, Peddapuram
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fc4e3bfb30cf917e0895152_CFO-Feed-Division-Devi-Seafoods-Peddapuram.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                            CFO - Feed Division - Devi Sea Foods, Singarayakonda
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fc4e3bf3677d64ded4c3d6c_CFO-Feed-Division-Devi-Seafoods-Singarayakonda.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                            Environmental Statement - Devi Sea Foods, Singarayakonda <br/>
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fc4e3bf666dc03dee297ecc_Environmental-Statement-Devi-Seafoods-Singarayakonda.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                            Safety Audit Report - Devi Sea Foods, Singarayakonda 
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fc4e3c09b588b759df9c031_Safety-Audit-Report-Devi-Seafoods-Singarayakonda.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                            CSR Project - Devi Sea Foods
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/625c54396d89775ee7cbaa54_CSR%20Project%20-%20DSF.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                            CSR Policy - Devi Sea Foods
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/624d8b9bb655a36090462e63_CSR%20Policy.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                            CSR Policy - Devi Sea Foods
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/624d8b9bb655a36090462e63_CSR%20Policy.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+                    <div class="div-block">
+                        <h4 class="heading">
+                           Annual Return 2020-21
+                        </h4>
+                        <a href="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/624d8b9cfb0a9e0b7d92e286_Annual%20Return_2020-21.pdf" target="_blank" class="products-button w-button">
+                            Download
+                        </a>
+                    </div>
+            </div>
+            
+            
+            </ul>
+            <label for="menu-btn" class="btn menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+    </nav>
+    
+    <div class="header facilities wf-section">
+        <div class="what-we-do-header-container w-container">
+            <div class="div-block-64-copy">
+                <div class="breadcrumbs">
+                    <a href="Home.html" class="breadcrumb w-inline-block">
+                        Home
+                    </a>
+                    <img src="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5f7428c4ec097904b077721d_Icon%20material-navigate-next.svg" loading="lazy" alt="" class="image-23">
+                    <a href="Overview.html" class="breadcrumb w-inline-block">
+                        What we do
+                    </a>
+                    <img src="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5f7428c4ec097904b077721d_Icon%20material-navigate-next.svg" loading="lazy" alt="" class="image-23">
+                    <a href="ShrimpProducts.html" class="breadcrumb w-inline-block">
+                        Processing
+                    </a>
+                    <img src="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5f7428cc4937c8eb9ae61b35_Icon%20material-navigate-next.svg" loading="lazy" alt="" class="image-23">
+                    <div class="breadcrumb active">
+                        Facilities
+                    </div>
+                </div>
+                <div>
+                    <h2 class="heading-24">
+                        Our PROCESSING Facilities
+                    </h2>
+                    <h1 class="heading-25">
+                        Surpassing Global Standards of Shrimp Processing
+                    </h1>
+                    <div class="div-block-17 what-we-do">
+                        <a href="ShrimpProducts.html" class="products-button facilities-page w-inline-block"><img src="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5f6faa234dc9a6017160b530_IC.svg" loading="lazy" height="24" alt="" class="image-14">
+                            <div class="text-block-8 _1 _3">
+                            Our Shrimp Products
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-block-29">
+            <div class="video-player">
+                <img src="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fb37bb491a9af1761a37093_Group%201574.svg" loading="lazy" id="play-videos" alt="" class="play-button">
+                <img src="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fb37bbdedd7d8e2e7f7a39a_Group%201573.svg" loading="lazy" id="pause-videos" alt="" class="pause-button">
+                <div data-poster-url="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fb38318f0c537441732ed34_Shrimp%20Processing%20Video-1-transcode.mp4" data-video-urls="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fb38318f0c537441732ed34_Shrimp Processing Video-1-transcode.mp4,https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fb38318f0c537441732ed34_Shrimp Processing Video-1-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" id="video" class="background-video w-background-video w-background-video-atom"><video id="1c743086-e2dd-38c9-2d06-50f7c293b354-video" autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fb38318f0c537441732ed34_Shrimp%20Processing%20Video-1-transcode.mp4&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fb38318f0c537441732ed34_Shrimp Processing Video-1-transcode.mp4" data-wf-ignore="true"><source src="https://uploads-ssl.webflow.com/5f4cb6a82b080e5617bb4a2a/5fb38318f0c537441732ed34_Shrimp Processing Video-1-transcode.webm" data-wf-ignore="true"></video></div>
+            
+            </div>
+        </div>
+    </div>   
+    <section class="facilitiesShrimpProcessing-section">
+        <div class="facilitiesShrimpProcessing-container">
+            <div class="facilitiesShrimpProcessing-carousel-section">
+                <div class="carousel-wrapper">
+                    <button class="nav-button prev-button">❮</button>
+                <div class="carousel">
+                    <div class="slide">
+                        <img src="/images/facilitiesShrimpProcessingImage1.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/facilitiesShrimpProcessingImage2.jfif">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/facilitiesShrimpProcessingImage3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/facilitiesShrimpProcessingImage4.webp">
+                    </div>
+                </div>
+                <button class="nav-button next-button">❯</button>
+                </div>
+            </div>
+            <div class="facilitiesShrimpProcessing-content-section">
+                <h1>
+                    Shrimp Processing
+                </h1>
+                <p>
+                    Our core strength has been processing and delivering safe and quality shrimp to our customers. The two processing facilities are strategically located at the main shrimp farming regions in the southern Indian state of Andhra Pradesh. Together our facilities produce over 20,000 tons of processed shrimp annually for export in various value-added forms. We have invested continuously to upgrade our facilities with the latest equipment to cater to our customers evolving product preferences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilitiesSourcingNetwork-section">
+        <h1>
+            Sourcing Network
+        </h1>
+        <p>
+            Our robust raw material sourcing network has been built on strength of years of fair buying practices. This helps with consistent raw material supplies, which in turn ensures uninterrupted deliveries to our customers. Raw material is sourced from all major farming areas of the state of Andhra Pradesh, which accounts over half of India’s aquaculture shrimp production.
+        </p>
+        <div class="facilitiesSourcingNetwork-container">
+            <div class="facilitiesSourcingNetwork-card">
+                <div class="facilitiesSourcingNetworkImage">
+                    <img src="/images/facilitiesSourcingNetworkImage1.png">
+                </div>
+                <div class="facilitiesSourcingNetwork-content">
+                    <div>
+                        <h2>
+                            Food Safety
+                        </h2>
+                        <p>
+                            We believe Food Safety is fundamental to seafood processing. We build our relationships and reputation with customers. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="facilitiesSourcingNetwork-card">
+                <div class="facilitiesSourcingNetworkImage">
+                    <img src="/images/facilitiesSourcingNetworkImage2.png">
+                </div>
+                <div class="facilitiesSourcingNetwork-content">
+                    <div>
+                        <h2>
+                            Quality Culture
+                        </h2>
+                        <p>
+                            A large team of qualified and trained personnel to check quality online and ensure our products conform to international quality standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="facilitiesSourcingNetwork-card">
+                <div class="facilitiesSourcingNetworkImage">
+                    <img src="/images/facilitiesSourcingNetworkImage3.png">
+                </div>
+                <div class="facilitiesSourcingNetwork-content">
+                    <div>
+                        <h2>
+                            Assurance
+                        </h2>
+                        <p>
+                            Our facilities have fully equipped In-house QA laboratory which performs Microbiological, Chemical and Environmental monitoring.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="facilitiesSourcingNetwork-card">
+                <div class="facilitiesSourcingNetworkImage">
+                    <img src="/images/facilitiesSourcingNetworkImage4.png">
+                </div>
+                <div class="facilitiesSourcingNetwork-content">
+                    <div>
+                        <h2>
+                            Accreditation
+                        </h2>
+                        <p>
+                            We comply with legal and safety requirements of importing countries and conform to international food safety standards under the GFSI program. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="facilitiesSupportSystems-section" id="FacilitiesSS">
+        <h1>
+            Support Systems
+        </h1>
+        <p>
+            We have built upstream infrastructure of Shrimp Farms and Hatchery to have better control over our Supply Chain.
+        </p>
+        <div class="facilitiesSupportSystems-container">
+            <div class="facilitiesSupportSystems-card">
+                <div class="facilitiesSupportSystems-image">
+                    <img src="/images/facilitiesSupportSystemsImage1.jpeg" alt="">
+                </div>
+                <div class="facilitiesSupportSystems-content">
+                    <h2>
+                        Shrimp Farming
+                    </h2>
+                    <p>
+                        Our farm network includes own BAP certified farms and contracted farms which are also BAP certified. Our own farms are also ASC certified.
+                    </p>
+                </div>
+            </div>
+            <div class="facilitiesSupportSystems-card">
+                <div class="facilitiesSupportSystems-image">
+                    <img src="/images/facilitiesSupportSystemsImage2.jpeg" alt="">
+                </div>
+                <div class="facilitiesSupportSystems-content">
+                    <h2>
+                        Shrimp Hatchery
+                    </h2>
+                    <p>
+                        Our BAP certified hatchery sources only SPF brood stock and manages larvae production with proper Animal Health Management plan to ensure disease free shrimp are supplied to the grow out farms.
+                    </p>
+                </div>
+            </div>
+            <div class="facilitiesSupportSystems-card">
+                <div class="facilitiesSupportSystems-image">
+                    <img src="/images/facilitiesSupportSystemsImage3.jpeg" alt="">
+                </div>
+                <div class="facilitiesSupportSystems-content">
+                    <h2>
+                        Maintaining Standard
+                    </h2>
+                    <p>
+                        With large cache of certified farms and support from our own Hatchery and Feed mill, we ensure standards are maintained each stage of our supply chain.
+                    </p>
+                </div>
+            </div>
+        </div>       
+    </section>
+
+    <footer class="footer clearfix">
+        <div class="second-footer">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                        <div class="widget widget_text clearfix">
+                            <div class="footer-logo">
+                                <img id="footer-logo-img" class="img-footer auto_size" height="46" width="170" src="/images/Logo.png" alt="image">
+                            </div>
+                            <div class="textwidget widget-text">
+                                <p>
+                                    At Devi Sea Foods, Our mission is to export and import Shrimp, And it is prefered by Shrimp Buyers Across the World!!!
+                                </p>
+                                <a class="widget-appointment" href="Contact.html">
+                                    Make a Appointment
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 widget-area">
+                        <div class="widget widget_nav_menu clearfix">
+                            <h3 class="widget-title">
+                                Links
+                            </h3>
+                            <ul id="menu-footer-quick-links" class="menu">
+                                <li>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="Home.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="About.html">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="Overview.html">
+                                        What We Do
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="ShrimpProducts.html">
+                                        Shrimp Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="ShrimpFeed.html">
+                                        Shrimp Feed
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
+                        <div class="widget widget_img_gallery clearfix">
+                            <h3 class="widget-title">
+                                Our Gallery
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a href="ShrimpProducts.html" >
+                                        <img class="img-footer" src="/images/EasyPeelShrimp.png" alt="easypeelShrimp">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ShrimpProducts.html" >
+                                        <img class="img-footer" src="/images/cookedShrimp.png" alt="cookedShrimp">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ShrimpFeed.html" >
+                                        <img class="img-footer" src="/images/peeledShrimp.png" alt="peeledShrimp">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ShrimpProducts.html" >
+                                        <img class="img-footer" src="/images/valueaddedShrimp.png" alt="valueaddedShrimp">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ShrimpFeed.html" >
+                                        <img class="img-footer" src="/images/ShrimpFeed.png" alt="ShrimpFeed">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ShrimpFeed.html" >
+                                        <img class="img-footer" src="/images/ShrimpHealthCare.png" alt="ShrimpHealthCare">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 widget-area">
+                        <div class="widget widget_cta clearfix">
+                            <h3 class="widget-title">
+                                Quick Contacts
+                            </h3>
+                            <p>
+                                If you have any questions or need help..
+                            </p>
+                            <div class="d-flex">
+                                <div class="call-icon-element">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <h4>
+                                    +1- 732 324 7770
+                                </h4>
+                            </div>
+                            <p>
+                                Devi Sea Foods Inc., 14800 S.Marys Ln. Houston,TX 77079
+                            </p>
+                            <div class="d-inline-table align-items-center justify-content-between">
+                                <a class="get-direction" href="Contact.html">
+                                    Get Direction
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                                <div class="social-icons d-inline-block">
+                                    <ul class="social-icons d-flex">
+                                        <li>
+                                            <a href="https://www.facebook.com/" target="_blank">
+                                                <i class="fa-brands fa-facebook fa-2x"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.twitter.com/" target="_blank">
+                                                <i class="fa-brands fa-twitter fa-2x"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="thttps://www.instagram.com/" target="_blank">
+                                                <i class="fa-brands fa-instagram fa-2x"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer-text copyright">
+            <div class="container-copyright">
+                <div class="row g-3">
+                    <div class="col-lg-12">
+                        <span class="cpy-text">
+                            Copyright © 2024
+                            <a href="#" >
+                                Devi Sea Foods
+                            </a> 
+                            All rights Reserved
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a id="totop" href="#" class="top-visible" style="display:none;" onclick="topFunction()" >
+        Back to Top<i class="fa-solid fa-angle-up"></i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Facilities.js"></script>
+    <script src="Overview.js"></script>
+</body>
+</html>
